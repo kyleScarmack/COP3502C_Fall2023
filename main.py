@@ -35,7 +35,6 @@ def decode():
 
 
 def main():
-    password = None
     encoded_password = None
     decoded_password = None
     user_selection = True
