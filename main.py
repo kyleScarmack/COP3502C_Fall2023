@@ -1,6 +1,6 @@
 """
 Lab 6
-Authors: Kyle Scarmack
+Authors: Kyle Scarmack and Pair Programmer: Ben Gold
 Class: COP3502C
 Section: 12309
 Description: A simplified password encoder/decoder program
