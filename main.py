@@ -30,8 +30,15 @@ def encode(password):
     return encoded_password
 
 
-def decode():
-    print("decode")
+def decode(password):
+    decoded_pass = ""
+    for num in password:
+        decoded_num = str(int(num) - 3)
+        if int(decoded_num) < 0:
+            decoded_num = str(int(decoded_num) + 10)
+        decoded_pass += decoded_num
+    return decoded_pass
+
 
 
 def main():
@@ -50,7 +57,8 @@ def main():
         elif option == 2:
             # display encoded password and decoded password
             # decoded_password = decode(encoded_password)
-            print(f"The encoded password is {encoded_password} and the original password is {decoded_password}.\n")
+            decoded_pass = decode(encoded_password)
+            print(f"The encoded password is {encoded_password} and the original password is {decoded_pass}.\n")
         elif option == 3:
             quit()
 
